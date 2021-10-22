@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Insert Title Here</title>
+  <link rel="stylesheet" href="main.css">
+</head>
+
+<body>
+  <div class="container">
+    <div class="main">
+      <div class="title">
+        <h1>Simple, traffic-based pricing</h1>
+        <p>Sign-up for our 30-day trial. No credit card required.</p>
+      </div>
+
+      <div class="card">
+        <div class="card-part1">
+          <p class="pageviews"><span id="number-pv">100</span><span id="k-m">K </span>PAGEVIEWS</p>
+          <p class="price"><span>$</span><span id="dollars">16.00</span> / month</p>
+          <div class="slidecontainer">
+            <input type="range" min="1" max="5" value="" class="slider" id="myRange">
+          </div>
+        </div>
+        <div class="card-part2">
+          <div class="monthly">
+            <p>Monthly Billing</p>
+            <div class="button">
+              <div class="circle" id="circle"></div>
+              <div class="circle2" id="circle2"></div>
+            </div>
+          </div>
+          <div class="yearly">
+            <p>Yearly Billing</p>
+            <div class="discount">25% discount</div>
+            <div class="discount-mobile">-25%</div>
+          </div>
+        </div>
+        <div class="line"></div>
+        <div class="card-part3">
+          <div>
+            <div class="card-part3--check">
+              <img src="images/icon-check.svg" alt="check">
+              <p>Unlimited websites</p>
+            </div>
+            <div class="card-part3--check">
+              <img src="images/icon-check.svg" alt="check">
+              <p>100% data ownership</p>
+            </div>
+            <div class="card-part3--check">
+              <img src="images/icon-check.svg" alt="check">
+              <p>Email reports</p>
+            </div>
+          </div>
+          <div class="trial">
+            Start my trial
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>

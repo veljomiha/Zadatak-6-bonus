@@ -1,0 +1,364 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Manrope', sans-serif;
+    font-size: 15px;
+    background-image: url(images/bg-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 100% 58%;
+    background-color: #F2F2F2;
+}
+
+.container {
+    min-height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+}
+
+.main {
+    width: 540px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.title {
+    background-image: url(images/pattern-circles.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: auto;
+    padding: 44px 0;
+}
+
+.title>h1 {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    color: #293356;
+}
+
+.title>p {
+    font-weight: 600;
+    font-size: 15px;
+    line-height: 20px;
+    text-align: center;
+    color: #848EAD;
+}
+
+.card {
+    margin-top: 54px;
+    background: #FFFFFF;
+    box-shadow: 0px 20px 30px -5px rgba(127, 137, 185, 0.152073);
+    border-radius: 8px;
+    padding: 40px 0 32px 0;
+}
+
+.card-part1 {
+    padding: 0 47px 0 47px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.pageviews {
+    font-weight: 800;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 2px;
+    color: #848EAD;
+}
+
+.price {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #848EAD;
+    display: flex;
+    align-items: center;
+}
+
+.price span {
+    font-weight: 800;
+    font-size: 40px;
+    line-height: 55px;
+    text-align: right;
+    letter-spacing: -1px;
+    color: #293356;
+}
+
+#dollars {
+    margin-right: 8px;
+}
+
+.slidecontainer {
+    width: 100%;
+    margin: 24px 0 40px 0;
+}
+
+.slider {
+    -webkit-appearance: none;
+    width: 100%;
+    height: 8px;
+    border-radius: 5px;
+    background: #ECF0FB;
+    outline: none;
+    opacity: 0.7;
+    transition: opacity .2s;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: #10D8C4;
+    cursor: pointer;
+    background-image: url(images/icon-slider.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    box-shadow: 0px 15px 30px rgba(0, 255, 231, 0.6);
+}
+
+.slider::-webkit-slider-thumb:hover {
+    background-color: #24AEA1;
+}
+
+.slider:hover {
+    opacity: 1;
+}
+
+.card-part2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    /* padding-right: 17px; */
+    padding: 0 47px 0 64px;
+}
+
+.monthly,
+.yearly {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #848EAD;
+    display: flex;
+    align-items: center;
+    margin-left: 16px;
+    margin-bottom: 40px;
+}
+
+.button {
+    width: 43px;
+    height: 22px;
+    background: #CFD8EF;
+    border-radius: 15px;
+    margin-left: 16px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+}
+
+.circle {
+    width: 14px;
+    height: 14px;
+    background-color: #FFFFFF;
+    border-radius: 50%;
+    margin: 4px 4px;
+}
+
+.circle2 {
+    width: 14px;
+    height: 14px;
+    background-color: #CFD8EF;
+    border-radius: 50%;
+    margin: 4px 4px;
+}
+
+.discount {
+    font-weight: 800;
+    font-size: 10px;
+    line-height: 14px;
+    text-align: center;
+    color: #FF8D68;
+    background: #FEEDE8;
+    border-radius: 9.5px;
+    padding: 3px 7px;
+    margin-left: 9px;
+}
+.discount-mobile{
+    display: none;
+}
+.line {
+    width: 540px;
+    max-width: 100%;
+    height: 1px;
+    background-color: #ECF0FB;
+}
+
+.card-part3 {
+    padding: 0 47px 0 47px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-top: 32px;
+    justify-content: space-between;
+}
+
+.card-part3--check {
+    display: flex;
+    align-items: center;
+}
+
+.card-part3--check:nth-child(2) {
+    margin: 10px 0;
+}
+
+.card-part3--check>p {
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 16px;
+    color: #848EAD;
+    margin-left: 16px;
+}
+
+.trial {
+    cursor: pointer;
+    background: #293356;
+    border-radius: 20.5px;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    color: #BECDFF;
+    padding: 12px 46px;
+}
+
+.trial:hover {
+    color: #FFFFFF;
+}
+
+
+@media(max-width: 550px) {
+
+    .main {
+        width: 327px;
+    }
+
+    .title {
+        padding: 44px 0;
+    }
+
+    .title>h1 {
+        font-size: 20px;
+        line-height: 27px;
+    }
+
+    .title>p {
+        font-size: 13px;
+        line-height: 23px;
+        padding: 0 70px;
+        margin-top: 8px;
+    }
+
+    .card {
+        margin-top: 28px;
+        padding: 34px 0 32px 0;
+    }
+
+    .card-part1 {
+        padding: 0 24px 0 24px;
+        justify-content: center;
+    }
+
+    .pageviews {
+        font-size: 12px;
+        line-height: 16px;
+    }
+
+    .price {
+        order: 1;
+        font-size: 14px;
+        line-height: 19px;
+    }
+
+    .price span {
+        font-size: 32px;
+        line-height: 44px;
+        letter-spacing: -0.8px;
+    }
+
+    .slidecontainer {
+        margin: 24px 0 24px 0;
+    }
+
+    .card-part2 {
+        margin-top: 24px;
+        padding: 0 24px 0 24px;
+    }
+
+    .monthly,
+    .yearly {
+        margin-left: 12px;
+        margin-bottom: 38px;
+    }
+    .button {
+        margin-left: 12px;
+    }
+
+    .discount {
+        display: none;
+    }
+
+    .discount-mobile{
+        display: block;
+        font-weight: 800;
+        font-size: 10px;
+        line-height: 14px;
+        text-align: center;
+        color: #FF8D68;
+        background: #FEEDE8;
+        border-radius: 9.5px;
+        padding: 3px 3px;
+        margin-left: 5px;
+    }
+
+    .line {
+        width: 540px;
+        max-width: 100%;
+    }
+
+    .card-part3 {
+        padding: 0 24px 0 24px;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 32px;
+        flex-direction: column;
+    }
+
+    .card-part3--check {
+        justify-content: center;
+    }
+
+    .card-part3--check:last-child {
+        margin-bottom: 33px;
+    }
+
+}

@@ -58,18 +58,28 @@ circle2.addEventListener("click", function(){
     slider.oninput = function(){
         currentValue = this.value;
         if(currentValue === "1"){
+            pageviews.innerHTML = "10";
+            kM.innerHTML = "K ";
             total.innerHTML = "6.00";
         }
         else if(currentValue === "2"){
+            pageviews.innerHTML = "50";
+            kM.innerHTML = "K ";
             total.innerHTML = "9.00";
         }
         else if(currentValue === "3"){
+            pageviews.innerHTML = "100";
+            kM.innerHTML = "K ";
             total.innerHTML = "14.00";
         }
         else if(currentValue === "4"){
+            pageviews.innerHTML = "500";
+            kM.innerHTML = "K ";
             total.innerHTML = "18.00";
         }
         else {
+            pageviews.innerHTML = "1";
+            kM.innerHTML = "M ";
             total.innerHTML = "28.00";
         }
     }

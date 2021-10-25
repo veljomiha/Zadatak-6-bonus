@@ -47,7 +47,7 @@ circle2.addEventListener("click", function(){
         total.innerHTML = "9.00";
     }
     else if(currentValue === "3"){
-        total.innerHTML = "14.00";
+        total.innerHTML = "12.00";
     }
     else if(currentValue === "4"){
         total.innerHTML = "18.00";
@@ -70,7 +70,7 @@ circle2.addEventListener("click", function(){
         else if(currentValue === "3"){
             pageviews.innerHTML = "100";
             kM.innerHTML = "K ";
-            total.innerHTML = "14.00";
+            total.innerHTML = "12.00";
         }
         else if(currentValue === "4"){
             pageviews.innerHTML = "500";

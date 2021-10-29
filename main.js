@@ -39,30 +39,9 @@ function sliderFunction(){
         slider.style.background = "#A4F3EB";
     }
 }
-slider.addEventListener("input",sliderFunction);
 
-circle2.addEventListener("click", function(){
-    circle.style.backgroundColor = "#CFD8EF";
-    circle2.style.backgroundColor = "#FFFFFF";
-
+function sliderFunction2() {
     currentValue = slider.value;
-    if(currentValue === "1"){
-        total.innerHTML = "6.00";
-    }
-    else if(currentValue === "2"){
-        total.innerHTML = "9.00";
-    }
-    else if(currentValue === "3"){
-        total.innerHTML = "12.00";
-    }
-    else if(currentValue === "4"){
-        total.innerHTML = "18.00";
-    }
-    else {
-        total.innerHTML = "27.00";
-    }
-    slider.oninput = function(){
-        currentValue = slider.value;
         if(currentValue === "1"){
             total.innerHTML = "6.00";
         }
@@ -78,7 +57,15 @@ circle2.addEventListener("click", function(){
         else {
             total.innerHTML = "27.00";
         }
-    }
+}
+
+slider.addEventListener("input",sliderFunction);
+
+circle2.addEventListener("click", function(){
+    circle.style.backgroundColor = "#CFD8EF";
+    circle2.style.backgroundColor = "#FFFFFF";
+    sliderFunction2();
+    slider.addEventListener("input",sliderFunction2);
 })
 
 circle.addEventListener("click", function(){
